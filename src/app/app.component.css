@@ -1,0 +1,17 @@
+@font-face{
+    font-family: bubbleboddy-neue ;
+    src: url(../assets/polices/bubbleboddyneue-regular-trial.woff);
+}
+
+@font-face{
+    font-family: comfortaa ;
+    src: url(../assets/polices/Comfortaa-Regular.woff);
+}
+
+*{
+    font-family:comfortaa ;
+}
+
+h1, h2, h3, h4{
+    font-family: bubbleboddy-neue;
+}

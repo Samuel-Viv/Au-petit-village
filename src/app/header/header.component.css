@@ -1,0 +1,17 @@
+.logo {
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+.navbar{
+    background-color: #F9d0a3 !important ;
+}
+
+.navigation{
+    color:#151217 !important;
+}
+
+.navigation:hover{
+    color: #da001e !important;
+}
