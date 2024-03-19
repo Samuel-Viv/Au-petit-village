@@ -24,10 +24,4 @@ export class SearchComponent implements OnInit  {
       this.productList = result.data;
     });
   } 
-
-  changeSortOrder(): void {
-    this.sortBy = this.sortBy === 'price_asc' ? 'price_desc' : 'price_asc';
-  }
-  }
-
-
+}

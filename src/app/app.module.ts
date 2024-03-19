@@ -13,6 +13,7 @@ import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/
 import { FormsModule } from '@angular/forms';
 import { FilterByNamePipe } from './filter-by-name.pipe';
 import { SortByPricePipe } from './sort-by-price.pipe';
+import { ProduitComponent } from './produit/produit.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { SortByPricePipe } from './sort-by-price.pipe';
     HomeComponent,
     SearchComponent,
     FilterByNamePipe,
-    SortByPricePipe
+    SortByPricePipe,
+    ProduitComponent
   ],
   imports: [
     BrowserModule,
