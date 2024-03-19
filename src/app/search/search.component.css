@@ -1,0 +1,25 @@
+.prix-btn{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+
+}
+
+.btn{
+    
+    background-color: #fdd90b;
+}
+
+.btn:hover{
+    background-color: #da001e;
+}
+
+p, a{
+    font-family:comfortaa ;
+}
+
+h1, h2, h3, h4{
+    font-family: bubbleboddy-neue;
+}
+
