@@ -1,0 +1,25 @@
+<div class="sort text-end">
+  <input type="text" placeholder="Rechercher..." class="mx-1" [(ngModel)]="searchProduct"/>
+  <select [(ngModel)]="sortBy">
+    <option value="">Trier par</option>
+    <option value="price_asc">Prix croissant</option>
+    <option value="price_desc">Prix décroissant</option>
+  </select>
+</div>
+
+<div class="col-12">
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor=" let product of productList | filterByName: searchProduct | sortByPrice: sortBy">
+            <div class="card">
+                <img [src]="product.image" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">{{product.nom}}</h5>
+                    <div class="prix-btn pt-2">
+                        <p class="card-text">{{product.prix}}€</p>
+                        <a [routerLink]="['/product', product.id]" class="btn">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

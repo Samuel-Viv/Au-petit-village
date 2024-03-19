@@ -3,7 +3,7 @@
         {
             "id":1,
             "nom": "Figurine de Astérix",
-            "images":"./../assets/image/asterix.jpg",
+            "image":"./assets/images/asterix.jpg",
             "description": "Figurine d'Astérix sculptée en argile et peinte à la main. Parfaite pour les collectionneurs et les amateurs.",
             "prix": 35.99,
             "stock": 10,
@@ -12,7 +12,7 @@
         {
             "id":2,
             "nom": "Figurine d'Obelix",
-            "images":"./../assets/image/asterix.jpg",
+            "image":"./assets/images/asterix.jpg",
             "description": "Figurine d'Obélix sculptée en argile et peinte à la main. Parfaite pour les collectionneurs et les amateurs.",
             "prix": 35.99,
             "stock": 10,
@@ -20,7 +20,7 @@
         }, {
             "id":3,
             "nom": "Figurine d'Idéfix",
-            "images":"./../assets/image/asterix.jpg",
+            "image":"./assets/images/asterix.jpg",
             "description": "Figurine d'Idéfix sculptée en argile et peinte à la main. Parfaite pour les collectionneurs et les amateurs.",
             "prix": 25.99,
             "stock": 10,
@@ -28,7 +28,7 @@
         }, {
             "id":4,
             "nom": "Figurine de Panoramix",
-            "images":"./../assets/image/asterix.jpg",
+            "image":"./assets/images/asterix.jpg",
             "description": "Figurine de Panoramix sculptée en argile et peinte à la main. Parfaite pour les collectionneurs et les amateurs.",
             "prix": 30.99,
             "stock": 10,
@@ -36,7 +36,7 @@
         }, {
             "id":5,
             "nom": "Figurine de Falbala",
-            "images":"./../assets/image/asterix.jpg",
+            "image":"./assets/images/asterix.jpg",
             "description": "Figurine de Falbala sculptée en argile et peinte à la main. Parfaite pour les collectionneurs et les amateurs.",
             "prix": 30.99,
             "stock": 10,
