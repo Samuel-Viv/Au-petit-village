@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
+import { Product } from '../product.model';
 
 @Component({
   selector: 'app-search',
@@ -10,7 +11,7 @@ export class SearchComponent implements OnInit  {
 
   searchProduct: string = '';
   sortBy: string= '';
-  productList: any[] = [];
+  productList: Product[] = [];
 
   constructor(private productService: ProductService) { }
 
@@ -20,8 +21,7 @@ export class SearchComponent implements OnInit  {
   }
 
   loadAllProducts() {
-    this.productService.getAllProducts().subscribe((result:any) => {
-      this.productList = result.data;
-    });
+    this.productList = this.productService.getAllProducts()  
+  };
   } 
-}
+

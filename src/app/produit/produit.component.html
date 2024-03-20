@@ -1,5 +1,30 @@
-<div *ngIf="product">
-    <h1>{{ product.nom }}</h1>
-    <img src="{{ product.image }}" alt="{{ product.nom }}">
-    <p>{{ product.description }}</p>
-  </div>
+<div class="container py-2">
+  
+    <div class="row" *ngIf="product">
+      <div class="col-md-6 gauche d-flex justify-content-center justify-content-md-start align-items-center">
+        <img src="{{ product.image }}" alt="{{ product.nom }}" class="img-fluid" />
+      </div>
+
+      <div class="col-md-6 droite">
+        <h1 class="pt-3 px-3">{{ product.nom }}</h1>
+        <div class="info-achat pt-5">
+          <div class="info">
+            <p>Matériaux: {{ product.materiau }}</p>
+            <p>Hauteur: {{ product.hauteur }}</p>
+          </div>
+
+          <div class="achat">
+            <p>{{ product.prix }}€</p>
+            <p>{{ product.disponibilite }}</p>
+            <button class="btn">Mettre au panier</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 description pt-5">
+        <h2>Description</h2>
+        <p>{{ product.description }}</p>
+      </div>
+    </div>
+  
+</div>
