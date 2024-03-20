@@ -1,14 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../product.service';
+import { Product } from '../product.model';
 
 @Component({
   selector: 'app-produit',
   templateUrl: './produit.component.html',
   styleUrl: './produit.component.css'
 })
-export class ProduitComponent implements OnInit  {
-  product: any;
+export class ProduitComponent  {
+  @Input() nom: string = ''
+  @Input() description: string = ''
+  @Input() materiau: string = ''
+  @Input() hauteur: string = ''
+  @Input() prix: number = 0
+  @Input() disponibilite: string = ''
+  product: Product | undefined;
 
   constructor(
     private route: ActivatedRoute,
@@ -16,15 +23,13 @@ export class ProduitComponent implements OnInit  {
   ) {}
  
   ngOnInit(): void {
-    this.getProduct();
+ const idParam = this.route.snapshot.paramMap.get('id');
+    if (idParam !== null) {
+      const productId = +idParam;
+      this.product = this.productService.getProductById(productId);
+    }
   }
 
-  getProduct(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    if (id) {
-      this.productService.getAllProducts().subscribe((products: any[]) => {
-        this.product = products.find(product => product.id === parseInt(id));
-      });
-  }
-}
+  
+
 }
