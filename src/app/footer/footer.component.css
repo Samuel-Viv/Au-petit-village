@@ -1,3 +1,40 @@
 footer{
     background-color: #F9d0a3;
 }
+
+.footer-titre{
+    font-size:1.25rem ;
+    font-weight: 600;
+}
+.centre{
+    display: flex;
+    flex-direction: column;
+}
+
+p, a{
+    font-family:comfortaa ;
+}
+
+a{
+    text-decoration: none;
+    color:#151217;
+}
+
+a:hover{
+    color: #da001e;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+.logo48{
+    font-size: 48px;
+}
+
+.bande{
+    background-color: #151217;
+    color: #F9d0a3;
+}
