@@ -11,7 +11,7 @@ export class ProductService {
   private products: Product[] = [
     {
         id:1,
-        nom: "Figurine de Astérix",
+        nom: "Figurine d'Astérix",
         image:"../assets/images/asterix.jpg",
         description: "Figurine d'Astérix sculptée en argile et peinte à la main. Parfaite pour les collectionneurs et les amateurs.",
         prix: 35.99,
@@ -21,7 +21,7 @@ export class ProductService {
     },
     {
         id:2,
-        nom: "Figurine d'Obelix",
+        nom: "Figurine d'Obélix",
         image:"../assets/images/asterix.jpg",
         description: "Figurine d'Obélix sculptée en argile et peinte à la main. Parfaite pour les collectionneurs et les amateurs.",
         prix: 35.99,

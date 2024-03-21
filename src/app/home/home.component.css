@@ -6,3 +6,14 @@ h1, h2, h3, h4{
     font-family: bubbleboddy-neue;
 }
 
+.separation {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.barre {
+    height: 4px;
+    width: 25%;
+    background-color: #da001e;
+  }
