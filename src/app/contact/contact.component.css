@@ -1,0 +1,32 @@
+h2{
+    font-family: bubbleboddy-neue;
+}
+input, textarea, button{
+    font-family:comfortaa ;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input, textarea{
+    width: 350px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+button{
+    background-color:#fdd90b;
+    border: 1px #fdd90b solid;
+    width: 150px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button:hover{
+    background-color:#da001e;
+}
