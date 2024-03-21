@@ -9,7 +9,7 @@
 
 <div class="col-12">
     <div class="row">
-        <div class="col-lg-3 mt-3" *ngFor=" let product of productList | filterByName: searchProduct | sortByPrice: sortBy">
+        <div class="col-lg-3 mt-3 py-3" *ngFor=" let product of productList | filterByName: searchProduct | sortByPrice: sortBy">
             <div class="card">
                 <img [src]="product.image" alt={{product.nom}}>
                 <div class="card-body">
