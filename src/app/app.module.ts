@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { FilterByNamePipe } from './filter-by-name.pipe';
 import { SortByPricePipe } from './sort-by-price.pipe';
 import { ProduitComponent } from './produit/produit.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ProduitComponent } from './produit/produit.component';
     SearchComponent,
     FilterByNamePipe,
     SortByPricePipe,
-    ProduitComponent
+    ProduitComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
